@@ -60,3 +60,7 @@ const getArraysMutualObjects = (arr1, arr2) => {
     }
     return q
 }
+  
+const replaceObjInArr = (array, oldObjIndex, newObj) => {
+    array.splice(oldObjIndex, 1, newObj)
+}
