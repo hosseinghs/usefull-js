@@ -64,3 +64,10 @@ const getArraysMutualObjects = (arr1, arr2) => {
 const replaceObjInArr = (array, oldObjIndex, newObj) => {
     array.splice(oldObjIndex, 1, newObj)
 }
+
+const deepCopy = obj => JSON.parse(JSON.stringify(obj));
+
+const getUrlQueryParams = () => {
+    const url = new URL(window.location.href)
+    return = url.searchParams.get()
+}
